@@ -1,0 +1,282 @@
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  width: 100%;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container{
+  text-align: center;
+}
+
+/*--header with navigation, student pic and description--*/
+.head{
+  padding: 0.5rem 1rem 1rem 1rem;
+  background-color: #D6D4D4;
+
+}
+
+h1{
+  color: #494949;
+}
+
+ul{
+  list-style: none;
+  text-align: center;
+}
+
+li{
+  padding: 10px 0;
+  font-weight: bold;
+  margin: 15px auto;
+  background-color: #EEEBEB;
+  color: #494949;
+  border-radius: 5px;
+  list-style: none;
+}
+
+a:hover{
+  color: #7b7b95;
+}
+
+
+img{
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  width:85%;
+}
+
+.description{
+  color: #818080;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+
+/*--portfolio section--*/
+.portfolio{
+  margin-top: 50px;
+}
+
+.portfolio h5{
+  font-weight: 800;
+}
+
+.portfolio h5, h4, p{
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.portfolio h4, p {
+  color: #545454;
+}
+
+
+/*--Contact Info Section--*/
+.contact-section{
+  background-color: #D6D4D4;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #9B9A9A;
+}
+
+.contact-section h5{
+  padding-bottom: 20px;
+}
+
+.contact-info span{
+  font-weight: bold;
+  padding-left: 7px;
+}
+
+.footer-nav{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+/*-- Media Queries --*/
+
+@media(min-width:768px){
+
+  .head{
+    padding-top: 2.5rem;
+  }
+
+  .nav-mobile{
+    width: 50%;
+  }
+
+
+  ul{
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .clearfix{
+    overflow: auto;
+  }
+
+  li{
+    background-color: inherit;
+  }
+
+  .profile{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .description{
+    padding-top: 20px;
+    /*padding-right: 20px;*/
+    text-align: left;
+    font-size: 18px;
+    width: 80%;
+  }
+
+  .profile-pic{
+    width: 45%;
+  }
+
+
+  /*--Portfolio section for tablets--*/
+  .portfolio{
+  }
+
+
+  .port-section{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 48%;
+  }
+
+  .port-section p{
+    display: block;
+    font-size: 16px;
+    padding: 10px 25px 25px 25px;
+    width:85%;
+
+  }
+
+  .sec-img{
+    max-width: 100%;
+  }
+
+  .contact-section p{
+    width: 60%;
+  }
+
+  .footer-tab{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    /* border: 1px solid green; */
+  }
+
+  li a{
+    color: #494949;
+    background-color: inherit;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  ul{
+    display: flex;
+    /* margin-right: 30px; */
+    /* margin-left: 30px; */
+    justify-content: space-around;
+  }
+
+  .student-footer{
+    color: #494949;
+    /*width:70%;*/
+    padding-top: 23px;
+    padding-left: 30px;
+    /*padding-right: 30px;*/
+    text-align: left;
+  }
+
+  .footer-nav{
+    display: none;
+  }
+}
+
+
+@media(min-width: 1024px){
+
+  .head{
+  /* padding: 0.5rem 1rem 1rem 1rem; */
+
+}
+
+  nav{
+    /*border: 1px solid orange;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .nav-mobile{
+    max-width: 400px;
+  }
+
+  .student{
+      /* border: 1px solid green; */
+      text-align: left;
+      /* padding-right: 320px; */
+      padding-bottom: 15px;
+      /* margin-left: 26px; */
+      width: 50%;
+    }
+
+  nav ul{
+    /*border: 1px solid blue;*/
+
+  }
+
+  li{
+    display: inline-block;
+  }
+
+
+  h1{
+    padding-top: 15px;
+  }
+
+  .description{
+    /*margin-left: 26px;*/
+    padding-right: 100px;
+    max-width: 50%;
+    padding-left: 0;
+    /*height: max-content;*/
+  }
+
+  .profile-pic{
+    width: 400px;;
+  }
+
+  .port-section{
+
+   width: 30%;
+  }
+
+}
+
+
+@media(min-width: 150px) and (max-width:767px) {
+   .footer-tab{
+    display: none;
+  }
+}
